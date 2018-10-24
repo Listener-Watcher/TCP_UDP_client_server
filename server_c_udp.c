@@ -1,4 +1,7 @@
-/* Creates a datagram server.  The port 
+/* Original source: http://www.linuxhowtos.org/data/6/server_udp.c
+   Original source is obtained from the slide provided on the section.
+   Copied part contains including parts, error function and main parts from line 23 to 46
+   Creates a datagram server.  The port 
    number is passed as an argument.  This
    server runs forever */
 
