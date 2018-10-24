@@ -1,4 +1,4 @@
-/*original source:http://www.linuxhowtos.org/data/6/client_tcp.c* 
+/*original source:http://www.linuxhowtos.org/data/6/client.c* 
  The source is obtained by the slide provided on the section.
  The copied part contains including, error function, and main part from line 19 to 46*/
 #include <stdio.h>
