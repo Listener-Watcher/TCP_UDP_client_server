@@ -1,4 +1,7 @@
-/* A simple server in the internet domain using TCP
+/* Original source: http://www.linuxhowtos.org/data/6/server_tcp.c
+   Original source is obtained from the slide provided on the section.
+   Copied part contains including parts, error function and main parts from line 21 to 45
+   A simple server in the internet domain using TCP
    The port number is passed as an argument */
 #include <stdio.h>
 #include <ctype.h>
