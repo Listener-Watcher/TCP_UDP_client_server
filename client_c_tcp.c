@@ -1,3 +1,6 @@
+/*original source:http://www.linuxhowtos.org/data/6/client_tcp.c* 
+ The source is obtained by the slide provided on the section.
+ The copied part contains including, error function, and main part from line 19 to 46*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -6,7 +9,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h> 
-
+// copied,error function
 void error(const char *msg)
 {
     perror(msg);
@@ -15,6 +18,7 @@ void error(const char *msg)
 
 int main(int argc, char *argv[])
 {
+//copied from 19 to 46
     int sockfd, portno, n;
     struct sockaddr_in serv_addr;
     struct hostent *server;
