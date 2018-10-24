@@ -1,4 +1,7 @@
-/* UDP client in the internet domain */
+/*original source:http://www.linuxhowtos.org/data/6/client_udp.c* 
+ The source is obtained by the slide provided on the section.
+ The copied part contains including part, void error function and from line 19 to 47.
+/
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -9,9 +12,10 @@
 #include <unistd.h>
 #include <string.h>
 
-void error(const char *);
+void error(const char *);//copied,imlemented in the end
 int main(int argc, char *argv[])
 {
+// copied from line 19 to 47
    int sock, n;
    unsigned int length;
    struct sockaddr_in server, from;
@@ -57,12 +61,10 @@ int main(int argc, char *argv[])
 		   printf("From server: %d\n",buffer[i]);
 	   }
    }
-//   write(1,"Got an ack: ",12);
-//   write(1,buffer,n);
    close(sock);
    return 0;
 }
-
+//error function implemented.copied
 void error(const char *msg)
 {
     perror(msg);
