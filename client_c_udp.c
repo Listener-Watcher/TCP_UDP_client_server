@@ -1,7 +1,7 @@
 /*original source:http://www.linuxhowtos.org/data/6/client_udp.c* 
  The source is obtained by the slide provided on the section.
  The copied part contains including part, void error function and from line 19 to 47.
-/
+*/
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
